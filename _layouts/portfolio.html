@@ -5,7 +5,7 @@ layout: default
 {% include header.html %}
   <div data-component="Content" class="content">
     <div class="blog-content w-container">
-      {% for page in site.categories.blog %}
+      {% for page in site.categories.portfolio %}
       <a href="{{ page.url }}" class="post w-inline-block">
         <h3 class="heading-2 post-title">{{ page.title }}</h3>
         <h5 class="heading-2 post-meta">{{ page.date | date: "%b %-d" }} • 5 min read</h5>
