@@ -24,8 +24,8 @@ layout: default
   <div data-component="Header" class="header">
     <div class="background"></div>
     <div class="overlay">
-      <h1 class="title">Some Title</h1>
-      <h3 class="subtitle">Some Subtitle</h3>
+      <h1 class="title">{{ site.title }}</h1>
+      <h3 class="subtitle">{{ site.description }}</h3>
     </div>
     <div class="navbar-container">
       <div data-collapse="medium" data-animation="default" data-duration="400" class="navbar w-nav">
@@ -40,60 +40,42 @@ layout: default
   </div>
   <div data-component="Content" class="content">
     <div class="home-content w-container">
+      {% if site.categories.adventures.size > 0 %}
       <h1 class="heading-5">Recent Adventures</h1>
       <div class="sample-blog">
-        <a href="#" class="post w-inline-block">
-          <h3 class="heading-2 post-title">Some Post</h3>
-          <h5 class="heading-2 post-meta">Jan 24 • 5 min read</h5>
-          <h5 class="heading post-description">Some description</h5>
-        </a>
-        <a href="#" class="post w-inline-block">
-          <h3 class="heading-2 post-title">Some Post</h3>
-          <h5 class="heading-2 post-meta">Jan 24 • 5 min read</h5>
-          <h5 class="heading post-description">Some description</h5>
-        </a>
-        <a href="#" class="post w-inline-block">
-          <h3 class="heading-2 post-title">Some Post</h3>
-          <h5 class="heading-2 post-meta">Jan 24 • 5 min read</h5>
-          <h5 class="heading post-description">Some description</h5>
-        </a>
+        {% for post in site.categories.adventures limit:3 %}
+          <a href="{{ post.url }}" class="post w-inline-block">
+            <h3 class="heading-2 post-title">{{ post.title }}</h3>
+            <h5 class="heading-2 post-meta">Jan 24 • 5 min read</h5>
+            <h5 class="heading post-description">{{ post.excerpt | truncatewords: 18 }}</h5>
+          </a>
+        {% endfor %}
       </div>
+      {% endif %}
+      {% if site.categories.posts.size > 0 %}
       <h1 class="heading-4">Recent Posts</h1>
       <div class="sample-blog">
-        <a href="#" class="post w-inline-block">
-          <h3 class="heading-2 post-title">Some Post</h3>
-          <h5 class="heading-2 post-meta">Jan 24 • 5 min read</h5>
-          <h5 class="heading post-description">Some description</h5>
-        </a>
-        <a href="#" class="post w-inline-block">
-          <h3 class="heading-2 post-title">Some Post</h3>
-          <h5 class="heading-2 post-meta">Jan 24 • 5 min read</h5>
-          <h5 class="heading post-description">Some description</h5>
-        </a>
-        <a href="#" class="post w-inline-block">
-          <h3 class="heading-2 post-title">Some Post</h3>
-          <h5 class="heading-2 post-meta">Jan 24 • 5 min read</h5>
-          <h5 class="heading post-description">Some description</h5>
-        </a>
+        {% for post in site.categories.posts limit:3 %}
+          <a href="{{ post.url }}" class="post w-inline-block">
+            <h3 class="heading-2 post-title">{{ post.title }}</h3>
+            <h5 class="heading-2 post-meta">Jan 24 • 5 min read</h5>
+            <h5 class="heading post-description">{{ post.excerpt | truncatewords: 18 }}</h5>
+          </a>
+        {% endfor %}
       </div>
+      {% endif %}
+      {% if site.categories.portfolio.size > 0 %}
       <h1 class="heading-3">Recent Portfolio</h1>
       <div class="sample-blog">
-        <a href="#" class="post w-inline-block">
-          <h3 class="heading-2 post-title">Some Post</h3>
+        {% for post in (site.categories.portfolio limit:3 %}
+        <a href="{{ post.url }}" class="post w-inline-block">
+          <h3 class="heading-2 post-title">{{ post.title }}</h3>
           <h5 class="heading-2 post-meta">Jan 24 • 5 min read</h5>
-          <h5 class="heading post-description">Some description</h5>
+          <h5 class="heading post-description">{{ post.excerpt | truncatewords: 18 }}</h5>
         </a>
-        <a href="#" class="post w-inline-block">
-          <h3 class="heading-2 post-title">Some Post</h3>
-          <h5 class="heading-2 post-meta">Jan 24 • 5 min read</h5>
-          <h5 class="heading post-description">Some description</h5>
-        </a>
-        <a href="#" class="post w-inline-block">
-          <h3 class="heading-2 post-title">Some Post</h3>
-          <h5 class="heading-2 post-meta">Jan 24 • 5 min read</h5>
-          <h5 class="heading post-description">Some description</h5>
-        </a>
+        {% endfor %}
       </div>
+      {% endif %}
       <h1 class="heading-3">Tools and Experience</h1>
       <div class="experience"><a href="#" class="link-block w-inline-block"></a><a href="#" class="link-block w-inline-block"></a><a href="#" class="link-block w-inline-block"></a><a href="#" class="link-block w-inline-block"></a><a href="#" class="link-block w-inline-block"></a><a href="#" class="link-block w-inline-block"></a><a href="#" class="link-block w-inline-block"></a><a href="#" class="link-block w-inline-block"></a><a href="#" class="link-block w-inline-block"></a><a href="#" class="link-block w-inline-block"></a><a href="#" class="link-block w-inline-block"></a><a href="#" class="link-block w-inline-block"></a><a href="#" class="link-block w-inline-block"></a><a href="#" class="link-block w-inline-block"></a><a href="#" class="link-block w-inline-block"></a><a href="#" class="link-block w-inline-block"></a><a href="#" class="link-block w-inline-block"></a><a href="#" class="link-block w-inline-block"></a><a href="#" class="link-block w-inline-block"></a><a href="#" class="link-block w-inline-block"></a><a href="#" class="link-block w-inline-block"></a></div>
     </div>
