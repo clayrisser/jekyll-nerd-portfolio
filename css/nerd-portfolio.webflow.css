@@ -263,7 +263,7 @@ body {
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  padding: 20px;
+  padding: 0px 20px;
   -webkit-justify-content: space-around;
   -ms-flex-pack: distribute;
   justify-content: space-around;
@@ -271,6 +271,11 @@ body {
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
   box-shadow: 0 0 6px 0 #000;
+}
+
+.experience-item {
+  text-decoration: none;
+  color: #333;
 }
 
 .link-block {
