@@ -19,7 +19,11 @@
 </head>
 <body>
   <div data-component="Header" class="header">
+    {% if page.featured-img %}
+    <div class="background" style="background-image: url('{{ site.url }}{{ site.baseurl }}/assets/images/{{ page.featured-img }}')"></div>
+    {% else %}
     <div class="background" style="background-image: url('{{ site.url }}{{ site.baseurl }}/assets/images/background.jpg')"></div>
+    {% endif %}
     <div class="overlay">
       <h1 class="title">{{ page.title }}</h1>
     </div>

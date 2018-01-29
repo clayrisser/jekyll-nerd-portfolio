@@ -9,7 +9,11 @@ layout: default
       <h1 class="heading-5">Recent Adventures</h1>
       <div class="sample-blog">
         {% for page in site.categories.adventures limit:3 %}
+          {% if page.featured-img %}
+          <a href="{{ page.url }}" class="post w-inline-block" style="background-image: url('{{ site.url }}{{ site.baseurl }}/assets/images/{{ page.featured-img }}')">
+          {% else %}
           <a href="{{ page.url }}" class="post w-inline-block">
+          {% endif %}
             <h3 class="heading-2 post-title">{{ page.title }}</h3>
             <h5 class="heading-2 post-meta">
               {{ page.date | date: "%b %-d" }}  • {{ page.content | read_time_short }}
@@ -23,7 +27,11 @@ layout: default
       <h1 class="heading-4">Recent Blog Posts</h1>
       <div class="sample-blog">
         {% for page in site.categories.blog limit:3 %}
+          {% if page.featured-img %}
+          <a href="{{ page.url }}" class="post w-inline-block" style="background-image: url('{{ site.url }}{{ site.baseurl }}/assets/images/{{ page.featured-img }}')">
+          {% else %}
           <a href="{{ page.url }}" class="post w-inline-block">
+          {% endif %}
             <h3 class="heading-2 post-title">{{ page.title }}</h3>
             <h5 class="heading-2 post-meta">
               {{ page.date | date: "%b %-d" }}  • {{ page.content | read_time_short }}
@@ -37,7 +45,11 @@ layout: default
       <h1 class="heading-3">Recent Portfolio</h1>
       <div class="sample-blog">
         {% for page in (site.categories.portfolio limit:3 %}
+        {% if page.featured-img %}
+        <a href="{{ page.url }}" class="post w-inline-block" style="background-image: url('{{ site.url }}{{ site.baseurl }}/assets/images/{{ page.featured-img }}')">
+        {% else %}
         <a href="{{ page.url }}" class="post w-inline-block">
+        {% endif %}
           <h3 class="heading-2 post-title">{{ page.title }}</h3>
           <h5 class="heading-2 post-meta">
             {{ page.date | date: "%b %-d" }}  • {{ page.content | read_time_short }}

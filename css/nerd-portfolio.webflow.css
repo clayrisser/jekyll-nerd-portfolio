@@ -182,10 +182,11 @@ body {
   margin: 20px;
   padding-right: 10px;
   padding-left: 10px;
-  background-image: url('../images/example-bg.png');
-  background-position: 0px 0px;
-  background-size: 125px;
+  background-position: center;
+  background-size: cover;
+  background-color: grey;
   text-decoration: none;
+  box-shadow: 0 0 6px 0 #000;
 }
 
 .heading {
