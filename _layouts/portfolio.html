@@ -8,7 +8,9 @@ layout: default
       {% for page in site.categories.portfolio %}
       <a href="{{ page.url }}" class="post w-inline-block">
         <h3 class="heading-2 post-title">{{ page.title }}</h3>
-        <h5 class="heading-2 post-meta">{{ page.date | date: "%b %-d" }} • 5 min read</h5>
+        <h5 class="heading-2 post-meta">
+          {{ page.date | date: "%b %-d" }}  • {{ page.content | read_time_short }}
+        </h5>
         <h5 class="heading post-description">{{ page.excerpt | truncatewords: 18 }}</h5>
       </a>
       {% endfor %}
