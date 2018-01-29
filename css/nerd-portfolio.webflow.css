@@ -66,6 +66,8 @@ body {
   margin-right: 0px;
   margin-left: 0px;
   padding-top: 10px;
+  padding-left: 60px;
+  padding-right: 60px;
   -webkit-box-pack: center;
   -webkit-justify-content: center;
   -ms-flex-pack: center;
@@ -79,6 +81,7 @@ body {
   color: #fff;
   font-size: 44px;
   text-shadow: 1px 1px 6px #000;
+  text-align: center;
 }
 
 .background {
@@ -107,14 +110,19 @@ body {
   -webkit-align-items: center;
   -ms-flex-align: center;
   align-items: center;
-  background-image: url('../images/example-bg.png');
-  background-position: 0px 0px;
-  background-size: 125px;
+  background-position: center;
+  background-size: cover;
+  -webkit-filter: blur(2px);
+  -moz-filter: blur(2px);
+  -o-filter: blur(2px);
+  -ms-filter: blur(2px);
+  filter: blur(2px);
 }
 
 .subtitle {
   color: #fff;
   text-shadow: 1px 1px 6px #000;
+  text-align: center;
 }
 
 .navbar {
@@ -298,6 +306,9 @@ body {
     -ms-flex-pack: center;
     justify-content: center;
   }
+  .navbar {
+    width: 200px;
+  }
   .sample-blog {
     -webkit-box-pack: center;
     -webkit-justify-content: center;
@@ -309,6 +320,9 @@ body {
 @media (max-width: 767px) {
   .content {
     padding-bottom: 60px;
+  }
+  .navbar {
+    width: 200px;
   }
   .container {
     display: -webkit-box;
@@ -332,6 +346,9 @@ body {
     -webkit-justify-content: center;
     -ms-flex-pack: center;
     justify-content: center;
+  }
+  .navbar {
+    width: 100%;
   }
   .sample-blog {
     -webkit-box-pack: center;
