@@ -10,6 +10,7 @@ start: deps clean
 .PHONY: build
 build: deps clean
 	-@rm -rf docs &>/dev/null || true
+	@gem build *.gemspec
 	@bundle exec jekyll build --verbose
 	@echo ::: BUILD :::
 
@@ -19,9 +20,14 @@ install: deps
 	@bundle install
 	@echo ::: INSTALL :::
 
+.PHONY: push
+push: build
+	@gem push *.gem
+	@echo ::: PUSH :::
+
 .PHONY: clean
 clean:
-	-@rm -rf _site &>/dev/null || true
+	-@rm -rf _site *.gem &>/dev/null || true
 	@echo ::: CLEAN :::
 
 .PHONY: deps
