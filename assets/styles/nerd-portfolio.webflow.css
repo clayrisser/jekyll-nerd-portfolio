@@ -128,6 +128,9 @@ body {
 .navbar {
   min-width: 120px;
   box-shadow: 0 0 6px 0 #000;
+}
+
+.nav-menu, .navbar, .w-nav-button.w--open {
   background-color: #FF9900;
 }
 
