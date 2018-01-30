@@ -28,6 +28,7 @@ skills:
   react: https://github.com/facebook/react
   ruby: https://www.ruby-lang.org
   nodejs: https://nodejs.org
+  python: https://python.com
 
 # Build settings
 markdown: kramdown
