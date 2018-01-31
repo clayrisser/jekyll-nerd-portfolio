@@ -318,6 +318,10 @@ body {
   background-size: 125px;
 }
 
+.github-fork-ribbon:before {
+  background-color: #0099FF !important;
+}
+
 @media (max-width: 991px) {
   .container {
     display: -webkit-box;
