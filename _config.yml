@@ -29,6 +29,7 @@ skills:
   ruby: https://www.ruby-lang.org
   nodejs: https://nodejs.org
   python: https://python.com
+  linux: https://kernel.org
 
 # Build settings
 markdown: kramdown
