@@ -306,7 +306,8 @@ body {
 
 .experience-item {
   text-decoration: none;
-  margin: 0px 20px;
+  margin: 20px;
+  color: #000000;
   font-size: 84px;
 }
 

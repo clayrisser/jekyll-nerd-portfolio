@@ -77,7 +77,7 @@ layout: default
       <div class="experience">
         {% for skill in site.skills %}
         <a class="experience-item" title="{{ skill.title }}" target="_blank" href="{{ skill.href }}">
-          <i class="devicon-{{ skill.icon }} colored"></i>
+          <i class="devicon-{{ skill.icon }} {% if skill.colored %}colored{% endif %}"></i>
         </a>
         {% endfor %}
       </div>
