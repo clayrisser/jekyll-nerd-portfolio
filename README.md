@@ -6,20 +6,20 @@ Jekyll portfolio theme for nerds
 
 1. Add the following line to your `Gemfile`:
 
-```ruby
-gem "jekyll-nerd-portfolio"
-```
+  ```ruby
+  gem "jekyll-nerd-portfolio"
+  ```
 
 2. Add the following line to your `_config.yml`:
 
-```yaml
-theme: jekyll-nerd-portfolio
-```
+  ```yaml
+  theme: jekyll-nerd-portfolio
+  ```
 
 3. Run the following command
-```sh
-bundle
-```
+  ```sh
+  bundle
+  ```
 
 ## Contributing
 
