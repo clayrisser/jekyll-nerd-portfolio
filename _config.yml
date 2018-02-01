@@ -8,12 +8,9 @@ twitter_username: jekyllrb
 github_username:  jekyll
 github_fork_banner: https://github.com/jamrizzi/jekyll-nerd-portfolio
 skills:
-  amazonwebservices: https://aws.amazon.com
-  react: https://github.com/facebook/react
-  ruby: https://www.ruby-lang.org
-  nodejs: https://nodejs.org
-  python: https://python.com
-  linux: https://kernel.org
+  - icon: amazonwebservices-plain-wordmark
+    href: https://aws.amazon.com
+    title: Amazon Web Services
 markdown: kramdown
 theme: jekyll-nerd-portfolio
 plugins:

@@ -76,10 +76,8 @@ layout: default
       <h1 class="heading-3">Tools and Experience</h1>
       <div class="experience">
         {% for skill in site.skills %}
-        <a class="experience-item" target="_blank" href="{{ skill[1] }}">
-          <h1>
-            <i class="devicon-{{ skill[0] }}-plain colored"></i>
-          </h1>
+        <a class="experience-item" title="{{ skill.title }}" target="_blank" href="{{ skill.href }}">
+          <i class="devicon-{{ skill.icon }} colored"></i>
         </a>
         {% endfor %}
       </div>
