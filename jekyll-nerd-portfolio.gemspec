@@ -1,6 +1,6 @@
 Gem::Specification.new do |spec|
   spec.name          = "jekyll-nerd-portfolio"
-  spec.version       = "0.1.9"
+  spec.version       = "0.1.10"
   spec.authors       = ["Jam Risser"]
   spec.email         = ["jam@jamrizzi.com"]
   spec.summary       = "Jekyll portfolio for nerds"
