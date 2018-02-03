@@ -7,5 +7,10 @@ layout: default
     <div class="post-content w-container">
       {{ content }}
     </div>
+    {% if site.comments %}
+    <div class="post-content w-container">
+      <section id="isso-thread" data-title="Foo!"></section>
+    </div>
+    {% endif %}
   </div>
 {% include footer.html %}

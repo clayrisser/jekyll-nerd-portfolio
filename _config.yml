@@ -11,6 +11,8 @@ skills:
   - icon: amazonwebservices-plain-wordmark
     href: https://aws.amazon.com
     title: Amazon Web Services
+isso_url: https://example.com
+comments: false
 markdown: kramdown
 theme: jekyll-nerd-portfolio
 plugins:
