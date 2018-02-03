@@ -1,37 +1,25 @@
 # jekyll-nerd-portfolio
 
-Welcome to your new Jekyll theme! In this directory, you'll find the files you need to be able to package up your theme into a gem. Put your layouts in `_layouts`, your includes in `_includes`, your sass files in `_sass` and any other assets in `assets`.
-
-To experiment with this code, add some sample content and run `bundle exec jekyll serve` – this directory is setup just like a Jekyll site!
-
-TODO: Delete this and the text above, and describe your gem
-
+Jekyll portfolio theme for nerds
 
 ## Installation
 
-Add this line to your Jekyll site's `Gemfile`:
+1. Add the following line to your `Gemfile`:
 
-```ruby
-gem "jekyll-nerd-portfolio"
-```
+    ```ruby
+    gem "jekyll-nerd-portfolio"
+    ```
 
-And add this line to your Jekyll site's `_config.yml`:
+2. Add the following line to your `_config.yml`:
 
-```yaml
-theme: jekyll-nerd-portfolio
-```
+    ```yaml
+    theme: jekyll-nerd-portfolio
+    ```
 
-And then execute:
-
-    $ bundle
-
-Or install it yourself as:
-
-    $ gem install jekyll-nerd-portfolio
-
-## Usage
-
-TODO: Write usage instructions here. Describe your available layouts, includes, sass and/or assets.
+3. Run the following command
+    ```sh
+    bundle
+    ```
 
 ## Contributing
 
@@ -49,4 +37,3 @@ To add a custom directory to your theme-gem, please edit the regexp in `jekyll-n
 ## License
 
 The theme is available as open source under the terms of the [MIT License](https://opensource.org/licenses/MIT).
-
