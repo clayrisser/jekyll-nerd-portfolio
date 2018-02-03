@@ -8,6 +8,11 @@
   <meta content="Home" property="og:title">
   <meta content="width=device-width, initial-scale=1" name="viewport">
   <meta content="Webflow" name="generator">
+  {% if page.featured-img %}
+  <meta property="og:image" content="{{ site.url }}{{ site.baseurl }}/assets/images/{{ page.featured-img }}"/>
+  {% else %}
+  <meta property="og:image" content="{{ site.url }}{{ site.baseurl }}/assets/images/background.jpg"/>
+  {% endif %}
   <link href="{{ site.url }}{{ site.baseurl }}/assets/css/normalize.css" rel="stylesheet" type="text/css">
   <link href="{{ site.url }}{{ site.baseurl }}/assets/css/webflow.css" rel="stylesheet" type="text/css">
   <link href="{{ site.url }}{{ site.baseurl }}/assets/css/devicon.min.css" rel="stylesheet" type="text/css">
