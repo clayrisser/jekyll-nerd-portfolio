@@ -157,6 +157,13 @@ p {
   text-shadow: 1px 1px 6px #000;
 }
 
+.post-description p {
+  font-family: Hermit, sans-serif;
+  line-height: 14pt;
+  font-size: 14px;
+  text-indent: 0px;
+}
+
 .overlay {
   position: fixed;
   z-index: -1;
