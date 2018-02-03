@@ -3,6 +3,11 @@ layout: default
 ---
 
 {% include header.html %}
+  {% if site.github_fork_banner %}
+  <a class="github-fork-ribbon fixed" href="{{ site.github_fork_banner }}" target="_blank" data-ribbon="Fork me on GitHub" title="Fork me on GitHub">
+    Fork me on GitHub
+  </a>
+  {% endif %}
   <div data-component="Content" class="content">
     <div class="contact-content w-container">
       <div class="form-block w-form">
