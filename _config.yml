@@ -19,7 +19,6 @@ taxonomies:
   - blog
   - portfolio
 theme: jekyll-nerd-portfolio
-github_token: 2e4f9eae56aa943702fd6c1af4d3fd14b4f1aee4
 plugins:
   - jekyll-feed
   - jekyll-read-time
