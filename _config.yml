@@ -3,7 +3,7 @@ name: Jam Risser
 email: jam@jamrizzi.com
 description: Jekyll portfolio for nerds
 baseurl: ""
-url: ""
+url: http://localhost:4000
 twitter_username: jekyllrb
 github_username:  jekyll
 github_fork_banner: https://github.com/jamrizzi/jekyll-nerd-portfolio
@@ -14,7 +14,12 @@ skills:
 isso_url: https://example.com
 comments: false
 markdown: kramdown
+taxonomies:
+  - adventures
+  - blog
+  - portfolio
 theme: jekyll-nerd-portfolio
+github_token: 2e4f9eae56aa943702fd6c1af4d3fd14b4f1aee4
 plugins:
   - jekyll-feed
   - jekyll-read-time

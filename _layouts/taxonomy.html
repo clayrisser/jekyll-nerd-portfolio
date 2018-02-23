@@ -2,7 +2,7 @@
 layout: default
 ---
 
-{% include header.html %}
+{% include page-header.html %}
   {% if site.github_fork_banner %}
   <a class="github-fork-ribbon fixed" href="{{ site.github_fork_banner }}" target="_blank" data-ribbon="Fork me on GitHub" title="Fork me on GitHub">
     Fork me on GitHub
@@ -10,7 +10,7 @@ layout: default
   {% endif %}
   <div data-component="Content" class="content">
     <div class="blog-content w-container">
-      {% for page in site.categories.adventures %}
+      {% for page in site.categories[page.taxonomy] %}
       <div class="post-container">
         {% if page.featured-img %}
         <div class="post-background" style="background-image: url('{{ site.url }}{{ site.baseurl }}/assets/images/{{ page.featured-img }}')"></div>
