@@ -2,6 +2,8 @@
 
 Jekyll portfolio theme for nerds
 
+![](assets/jekyll-nerd-portfolio.png)
+
 ## Installation
 
 1. Add the following line to your `Gemfile`:
